@@ -1,62 +1,101 @@
-<!DOCTYPE html>
+
+          
+    <!DOCTYPE html>
 <html>
 <head>
-    <title>Container House Inspiration</title>
-    <!-- EXTERNAL CSS [3 marks]: Referencing an external file -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Beautiful House Inspirations</title>
 
-    <!-- INTERNAL CSS [3 marks]: Styles defined in the head section -->
+    <!-- Internal CSS -->
     <style>
         body {
-            background-color: #333333; /* Dark Grey Background [3 marks] */
-            color: white;
+            background-color: darkgrey;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            text-align: center; /* Centered Content [3 marks] */
+            text-align: center;
         }
-        .container-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+
+        h1 {
+            color: white;
         }
-        .gallery-item {
-            border: 2px solid #555;
+
+        .container {
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
             padding: 10px;
-            border-radius: 8px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .container img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .description {
+            padding: 10px;
+            font-size: 14px;
         }
     </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-    <h1 style="color: #f0f0f0;">HOUSE INSPIRATION:</h1>
-    
-    <!-- INLINE CSS [3 marks]: Style attribute inside the HTML element -->
-    <p style="font-style: italic; margin-bottom: 40px;">Exploring luxury architecture using modular shipping containers.</p>
+    <!-- Inline CSS -->
+    <h1 style="color: gold;">Beautiful House Inspirations</h1>
 
-    <div class="container-gallery">
-        <!-- Images representing 5+ container builds -->
-        <div class="gallery-item">
-            <p>5-Bedroom Luxury Layout</p>
-        </div>
-        <div class="gallery-item">
-            <p>Stacked 3-Story Design</p>
-        </div>
-        <div class="gallery-item">
-            <p>Spacious L-Shape Villa</p>
-        </div>
-        <div class="gallery-item">
-            <p>Modern Industrial Mansion</p>
-        </div>
-        <div class="gallery-item">
-            <p>Sustainable Multi-Unit Home</p>
+    <!-- Container 1 -->
+    <div class="container">
+        <img src="modern_house.jpg" alt="Modern House">
+        <div class="description">
+            Modern Luxury House with glass walls and clean design.
         </div>
     </div>
+
+    <!-- Container 2 -->
+    <div class="container">
+        <img src="beach_house.jpg" alt="Beach House">
+        <div class="description">
+            Beautiful beach house with ocean view.
+        </div>
+    </div>
+
+    <!-- Container 3 -->
+    <div class="container">
+        <img src="mountain_house.jpg" alt="Mountain House">
+        <div class="description">
+            Peaceful mountain cabin surrounded by nature.
+        </div>
+    </div>
+
+    <!-- Container 4 -->
+    <div class="container">
+        <img src="villa.jpg" alt="Luxury Villa">
+        <div class="description">
+            Elegant luxury villa with swimming pool.
+        </div>
+    </div>
+
+    <!-- Container 5 -->
+    <div class="container">
+        <img src="classic_house.jpg" alt="Classic House">
+        <div class="description">
+            Classic architectural house with timeless beauty.
+        </div>
+    </div>
+/* External CSS */
+.description {
+    color: black;
+    font-weight: bold;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 </body>
 </html>
-
-
-
-
+  
