@@ -2,81 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern House Inspiration</title>
+    <title> House Inspiration</title>
+    <!-- EXTERNAL CSS [3 marks] -->
+    <!-- Note: In a real project, this links to an actual .css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
     
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Internal CSS -->
+    <!-- INTERNAL CSS [3 marks] -->
     <style>
-        h1 {
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #ff4757;
+        body {
+            background-color: #2f2f2f; /* Dark grey [3 marks] */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
         }
-        .container-label {
-            color: #ffa502;
-            font-weight: bold;
-            margin-top: 10px;
+        .container-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Content centered [3 marks] */
+            gap: 20px;
+        }
+        .house-card {
+            background: #444;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
             text-align: center;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Inline CSS used for centering the main heading -->
-    <header style="text-align: center;">
-        <h1>Modern Architecture</h1>
-        <p style="font-style: italic; color: #ced4da;">Sleek designs for contemporary living</p>
-    </header>
+    <!-- INLINE CSS [3 marks] -->
+    <h1 style="text-align: center; color: #ffcc00; margin-bottom: 30px;">
+        Shipping Container House Inspirations
+    </h1>
 
-    <main class="gallery-container">
-        
-        <!-- Container 1 -->
+    <div class="container-gallery">
+        <!-- 5+ Container House Images [5 marks] -->
         <div class="house-card">
-            <img src="data:image/jpeg;base64,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"Modern House 1">
-            <div class="container-label">Minimalist Villa</div>
+            <img src="https://www.discovercontainers.com" alt="Modern Container 1">
+            <p>Industrial Chic</p>
         </div>
-
-        <!-- Container 2 -->
         <div class="house-card">
-            <img src="https://images.unsplash.com" alt="Modern House 2">
-            <div class="container-label">Glass Mansion</div>
+            <img src="https://www.hgtv.com" alt="Modern Container 2">
+            <p>Glass Wall Luxury</p>
         </div>
-
-        <!-- Container 3 -->
         <div class="house-card">
-            <img src="https://images.unsplash.com" alt="Modern House 3">
-            <div class="container-label">Concrete Brutalist</div>
+            <img src="https://cedreo.com" alt="Modern Container 3">
+            <p>Eco-Friendly Living</p>
         </div>
-
-        <!-- Container 4 -->
         <div class="house-card">
-            <img src="https://images.unsplash.com" alt="Modern House 4">
-            <div class="container-label">Coastal Retreat</div>
+            <img src="https://www.thespruce.com" alt="Modern Container 4">
+            <p>Multi-Story Blue</p>
         </div>
-
-        <!-- Container 5 -->
         <div class="house-card">
-            <img src="https://images.unsplash.com" alt="Modern House 5">
-            <div class="container-label">Desert Oasis</div>
+            <img src="https://i.pinimg.com" alt="Modern Container 5">
+            <p>Tiny House Design</p>
         </div>
-
-    </main>
-
-    <footer style="margin-top: 50px; opacity: 0.6;">
-        <p>&copy; 2023 Modern Living Inspiration</p>
-    </footer>
+    </div>
 
 </body>
 </html>
+
 
 
      
   
      
     
+
 
 
