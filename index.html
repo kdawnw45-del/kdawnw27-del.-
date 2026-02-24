@@ -1,70 +1,81 @@
-
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="structure.css">
-    <style>
-        /* Internal CSS: Room Theme (The Vibe) */
-        .frame-container {
-            border: 8px solid #2c3e50; /* Deep Charcoal Frames */
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            background-color: #f9fafb;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .frame-container:hover {
-            transform: scale(1.05); /* Interactive "Living" Feel */
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern House Inspiration</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ff4757;
+        }
+        .container-label {
+            color: #ffa502;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="gallery-wall">
-        <!-- Container 1: Architecture -->
-        <div class="frame-container">
-            <img src="https://images.unsplash.com" alt="House Structure">
-            <p style="color: #555; padding: 10px;">Foundation</p> <!-- Inline CSS -->
+    <!-- Inline CSS used for centering the main heading -->
+    <header style="text-align: center;">
+        <h1>Modern Architecture</h1>
+        <p style="font-style: italic; color: #ced4da;">Sleek designs for contemporary living</p>
+    </header>
+
+    <main class="gallery-container">
+        
+        <!-- Container 1 -->
+        <div class="house-card">
+            <img src="https://images.unsplash.com" alt="Modern House 1">
+            <div class="container-label">Minimalist Villa</div>
         </div>
 
-        <!-- Container 2: Color Palette -->
-        <div class="frame-container">
-            <img src="https://images.unsplash.com" alt="Interior Colors">
-            <p style="font-style: italic; padding: 10px;">Mood & Tone</p>
+        <!-- Container 2 -->
+        <div class="house-card">
+            <img src="https://images.unsplash.com" alt="Modern House 2">
+            <div class="container-label">Glass Mansion</div>
         </div>
 
-        <!-- Container 3: Symmetry -->
-        <div class="frame-container" style="grid-column: span 1;"> <!-- Inline CSS -->
-            <img src="https://images.unsplash.com" alt="Centered Design">
-            <p style="font-weight: bold; padding: 10px;">Centered Balance</p>
+        <!-- Container 3 -->
+        <div class="house-card">
+            <img src="https://images.unsplash.com" alt="Modern House 3">
+            <div class="container-label">Concrete Brutalist</div>
         </div>
 
-        <!-- Container 4: Nature Integration -->
-        <div class="frame-container">
-            <img src="https://images.unsplash.com" alt="House Plants">
-            <p style="text-transform: uppercase; padding: 10px;">Living Decor</p>
+        <!-- Container 4 -->
+        <div class="house-card">
+            <img src="https://images.unsplash.com" alt="Modern House 4">
+            <div class="container-label">Coastal Retreat</div>
         </div>
 
-        <!-- Container 5: Personal Touches -->
-        <div class="frame-container">
-            <img src="https://images.unsplash.com" alt="Cozy Bedroom">
-            <p style="letter-spacing: 2px; padding: 10px;">Comfort</p>
+        <!-- Container 5 -->
+        <div class="house-card">
+            <img src="https://images.unsplash.com" alt="Modern House 5">
+            <div class="container-label">Desert Oasis</div>
         </div>
-    </div>
+
+    </main>
+
+    <footer style="margin-top: 50px; opacity: 0.6;">
+        <p>&copy; 2023 Modern Living Inspiration</p>
+    </footer>
 
 </body>
 </html>
+
 
      
   
      
     
+
