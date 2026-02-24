@@ -1,101 +1,70 @@
 
-          
-    <!DOCTYPE html>
-<html>
+
+   <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Beautiful House Inspirations</title>
-
-    <!-- Internal CSS -->
+    <link rel="stylesheet" href="structure.css">
     <style>
-        body {
-            background-color: darkgrey;
-            font-family: Arial, sans-serif;
-            text-align: center;
+        /* Internal CSS: Room Theme (The Vibe) */
+        .frame-container {
+            border: 8px solid #2c3e50; /* Deep Charcoal Frames */
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background-color: #f9fafb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .frame-container:hover {
+            transform: scale(1.05); /* Interactive "Living" Feel */
         }
 
-        h1 {
-            color: white;
-        }
-
-        .container {
-            display: inline-block;
-            width: 250px;
-            margin: 15px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        .container img {
+        img {
             width: 100%;
             height: 200px;
-            border-radius: 10px;
-        }
-
-        .description {
-            padding: 10px;
-            font-size: 14px;
+            object-fit: cover;
         }
     </style>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
-    <!-- Inline CSS -->
-    <h1 style="color: gold;">Beautiful House Inspirations</h1>
+    <div class="gallery-wall">
+        <!-- Container 1: Architecture -->
+        <div class="frame-container">
+            <img src="https://images.unsplash.com" alt="House Structure">
+            <p style="color: #555; padding: 10px;">Foundation</p> <!-- Inline CSS -->
+        </div>
 
-    <!-- Container 1 -->
-    <div class="container">
-        <img src="modern_house.jpg" alt="Modern House">
-        <div class="description">
-            Modern Luxury House with glass walls and clean design.
+        <!-- Container 2: Color Palette -->
+        <div class="frame-container">
+            <img src="https://images.unsplash.com" alt="Interior Colors">
+            <p style="font-style: italic; padding: 10px;">Mood & Tone</p>
+        </div>
+
+        <!-- Container 3: Symmetry -->
+        <div class="frame-container" style="grid-column: span 1;"> <!-- Inline CSS -->
+            <img src="https://images.unsplash.com" alt="Centered Design">
+            <p style="font-weight: bold; padding: 10px;">Centered Balance</p>
+        </div>
+
+        <!-- Container 4: Nature Integration -->
+        <div class="frame-container">
+            <img src="https://images.unsplash.com" alt="House Plants">
+            <p style="text-transform: uppercase; padding: 10px;">Living Decor</p>
+        </div>
+
+        <!-- Container 5: Personal Touches -->
+        <div class="frame-container">
+            <img src="https://images.unsplash.com" alt="Cozy Bedroom">
+            <p style="letter-spacing: 2px; padding: 10px;">Comfort</p>
         </div>
     </div>
 
-    <!-- Container 2 -->
-    <div class="container">
-        <img src="beach_house.jpg" alt="Beach House">
-        <div class="description">
-            Beautiful beach house with ocean view.
-        </div>
-    </div>
-
-    <!-- Container 3 -->
-    <div class="container">
-        <img src="mountain_house.jpg" alt="Mountain House">
-        <div class="description">
-            Peaceful mountain cabin surrounded by nature.
-        </div>
-    </div>
-
-    <!-- Container 4 -->
-    <div class="container">
-        <img src="villa.jpg" alt="Luxury Villa">
-        <div class="description">
-            Elegant luxury villa with swimming pool.
-        </div>
-    </div>
-
-    <!-- Container 5 -->
-    <div class="container">
-        <img src="classic_house.jpg" alt="Classic House">
-        <div class="description">
-            Classic architectural house with timeless beauty.
-        </div>
-    </div>
-/* External CSS */
-.description {
-    color: black;
-    font-weight: bold;
-}
-
-.container:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
 </body>
 </html>
+
+     
   
+     
+    
